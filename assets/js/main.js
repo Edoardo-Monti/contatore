@@ -27,6 +27,14 @@ document.getElementById("minus").addEventListener("click", function(){
     
 })
 
+document.getElementById("reset").addEventListener("click", function(){
+
+    screen.innerHTML = 0
+    stopFunction()
+    soldatino = false
+    
+})
+
 // incremento automatico
 document.getElementById("start").addEventListener("click", function(){
     if(!soldatino){

@@ -24,7 +24,7 @@
     
 } 
 
-#start, #stop, #minus, #plus, #x3, #x10 {
+#start, #stop, #minus, #plus, #x3, #x10, #reset {
     --blue: #644dff;
     --blue2: #4836bb;
     --dark: #654dff63;
@@ -48,8 +48,9 @@
   #stop:active,
   #minus:active, 
   #plus:active,
-  #x3:active
-  #x10:active{
+  #x3:active,
+  #x10:active,
+  #reset:active{
     transform:  translateY(8px);
     box-shadow: 0 0 0 var(--dark);
   }
