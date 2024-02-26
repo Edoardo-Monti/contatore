@@ -5,20 +5,51 @@
 }
 
 .contatore{
-    width: 400px;
-    border: 2px solid red;
+    width: 450px;
+    border-radius: .75rem;
 }
 
 .screen{
     height: 100px;
-    border: 1px solid black;
-    font-size: 40px;
+    border: 1px solid;
+    font-size: 3rem;
+    color: #fff;
+    background-color: #c9c1ff;
 }
 
-.box{
-    height: 200px;
-}
+.box-1, .box-2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #c9c1ff;
+    
+} 
 
-button{
-    padding: 10px;
-}
+#start, #stop, #minus, #plus, #x3, #x10 {
+    --blue: #644dff;
+    --blue2: #4836bb;
+    --dark: #654dff63;
+    cursor: pointer;
+    width: 100px;
+    height: 48px;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: var(--blue);
+    border: 2px solid var(--blue2);
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 var(--blue2);
+    /* transform: skew(-10deg); */
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px var(--dark));
+  }
+  
+  #start:active, 
+  #stop:active,
+  #minus:active, 
+  #plus:active,
+  #x3:active
+  #x10:active{
+    transform:  translateY(8px);
+    box-shadow: 0 0 0 var(--dark);
+  }

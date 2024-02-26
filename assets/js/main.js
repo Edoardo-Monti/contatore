@@ -35,6 +35,20 @@ document.getElementById("start").addEventListener("click", function(){
     }
 })
 
+document.getElementById("x3").addEventListener("click", function(){
+    if(!soldatino){
+        start = setInterval(startFunction, 333);
+        soldatino = true
+    }
+})
+
+document.getElementById("x10").addEventListener("click", function(){
+    if(!soldatino){
+        start = setInterval(startFunction, 100);
+        soldatino = true
+    }
+})
+
 document.getElementById("stop").addEventListener("click", function(){
     stopFunction()
     soldatino = false
