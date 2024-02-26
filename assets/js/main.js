@@ -1,6 +1,27 @@
 let screen = document.querySelector(".screen")
+let box1 = document.querySelector(".box-1")
+let box2 = document.querySelector(".box-2")
 let start 
 let soldatino = false
+
+const buttonMinus = document.createElement("button")
+const buttonReset = document.createElement("button")
+const buttonPlus = document.createElement("button")
+
+buttonMinus.textContent = "-"
+buttonMinus.setAttribute("id", "minus");
+box1.appendChild(buttonMinus)
+
+buttonReset.textContent = "Reset"
+buttonReset.setAttribute("id", "reset");
+box1.appendChild(buttonReset)
+
+buttonPlus.textContent = "+"
+buttonPlus.setAttribute("id", "plus");
+box1.appendChild(buttonPlus)
+
+
+
 
 document.getElementById("plus").addEventListener("click", function(){
 
