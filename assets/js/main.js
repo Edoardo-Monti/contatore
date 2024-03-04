@@ -21,6 +21,27 @@ buttonPlus.setAttribute("id", "plus");
 box1.appendChild(buttonPlus)
 
 
+const buttonStart = document.createElement("button")
+const buttonX3 = document.createElement("button")
+const buttonX10 = document.createElement("button")
+const buttonStop = document.createElement("button")
+
+buttonStart.textContent = "Start"
+buttonStart.setAttribute("id", "start");
+box2.appendChild(buttonStart)
+
+buttonX3.textContent = "X3"
+buttonX3.setAttribute("id", "x3");
+box2.appendChild(buttonX3)
+
+buttonX10.textContent = "X10"
+buttonX10.setAttribute("id", "x10");
+box2.appendChild(buttonX10)
+
+buttonStop.textContent = "Stop"
+buttonStop.setAttribute("id", "stop");
+box2.appendChild(buttonStop)
+
 
 
 document.getElementById("plus").addEventListener("click", function(){
